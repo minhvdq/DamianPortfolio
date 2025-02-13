@@ -1,0 +1,212 @@
+html{
+    overflow-x: hidden;
+}
+
+
+
+#banner {
+  width: 100vw;
+  height: 60vh;
+  background-image: url("./assets/portf-banner.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+#banner h1 {
+  color: white;
+  font-size: 4vw;
+  font-family: "Gill Sans", sans-serif;
+}
+
+.title {
+  font-size: 3rem;
+  text-align: center;
+}
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
+
+.image-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px; /* Space between images */
+  width: 100%; /* Ensure it fits the parent container */
+  max-width: 100%; /* Ensure no overflow */
+  overflow: hidden; /* Prevent overflow */
+  flex-wrap: wrap; /* Allow wrapping on smaller screens */
+}
+
+.image-wrapper img {
+  max-width: 49%; /* Each image takes up to 49% of the wrapper's width */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Cover the available space, cropping if necessary */
+  border-radius: 8px; /* Optional: Add rounded corners to images */
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.1); /* Optional: Add a subtle shadow */
+}
+
+.project{
+    margin-bottom: 15vh;
+}
+
+/* CONTACT SECTION */
+section {
+  padding-top: 4vh;
+  padding-left: 5%;
+  padding-right: 5%;
+  box-sizing: border-box;
+  min-height: fit-content;
+  max-width: 100%;
+}
+
+#contact{
+  margin: 10px;
+  display: flex;
+  justify-content: center; /* Horizontally centers items */
+  align-items: center;    /* Vertically centers items */
+  text-align: center;     /* Centers text if multiple lines */
+}
+
+#contact img{
+  margin: 2px;
+}
+
+/* FOOTER SECTION */
+footer {
+  height: 26vh;
+  margin: 0 1rem;
+  padding-top: 5vh;
+  border-top: solid grey 0.2px;
+}
+
+footer p {
+  text-align: center;
+}
+
+#main-content{
+    margin-left: 20vw;
+    margin-right: 20vw;
+}
+
+/* Ensure responsiveness */
+@media (max-width: 768px) {
+  section {
+    margin: 0 2rem;
+    padding: 2vh 2%;
+  }
+  .image-wrapper img {
+    max-width: 100%; /* Each image takes up the full width on smaller screens */
+    margin-bottom: 10px; /* Add space between images when stacked */
+  }
+  #main-content{
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  #contact{
+    margin: 0;
+  }
+}
+
+.banner-content button{
+  width: 40vw
+}
+
+/**
+Creating pop up feature for images
+*/
+
+.myImage {
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.myImage:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+  text-align: center;
+  color: #ccc;
+  padding: 10px 0;
+  height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {  
+  -webkit-animation-name: zoom;
+  -webkit-animation-duration: 0.6s;
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+  from {-webkit-transform:scale(0)} 
+  to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+  from {transform:scale(0)} 
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+  .modal-content {
+    width: 100%;
+  }
+}
