@@ -177,7 +177,6 @@ section {
   margin: auto 0;
 }
 
-
 .section__text {
   align-self: center;
   text-align: center;
@@ -221,6 +220,7 @@ section {
   display: flex;
   justify-content: center;
   gap: 1rem;
+  flex-wrap: wrap;
 }
 
 .btn {
@@ -263,6 +263,21 @@ section {
   gap: 1rem;
 }
 
+/* Fiverr Button Style */
+.btn-fiverr {
+  background-color: #1dbf73;
+  color: white;
+  border: none;
+  width: 10rem;
+}
+
+.btn-fiverr:hover {
+  background-color: #19a364;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
 /* ABOUT SECTION */
 
 #about {
@@ -270,11 +285,9 @@ section {
   margin-top: 20vh;
 }
 
-.main-content{
-    margin-top: 5vh;
+.main-content {
+  margin-top: 5vh;
 }
-
-
 
 .details-container {
   padding: 1.5rem;
@@ -292,37 +305,36 @@ section {
 }
 
 .section__pic-container-two {
-    height: 400px;
-    width: 400px;
-    margin: auto 0;
-  }
-#crap{
-    float: right;
-    width: 40vw;
-    height: 30vh;
+  height: 400px;
+  width: 400px;
+  margin: auto 0;
+}
+#crap {
+  float: right;
+  width: 40vw;
+  height: 30vh;
 }
 
-#crap-detail{
-    margin-left: 0;
-    width: 30vw;
+#crap-detail {
+  margin-left: 0;
+  width: 30vw;
 }
 
 .about-containers {
-    gap: 2rem;
-    margin-bottom: 2rem;
-    margin-top: 2rem;
-  }
-  
-  .about-details-container {
-    justify-content: center;
-    flex-direction: column;
-  }
-  
-  .about-containers,
-  .about-details-container {
-    display: flex;
-  }
-  
+  gap: 2rem;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}
+
+.about-details-container {
+  justify-content: center;
+  flex-direction: column;
+}
+
+.about-containers,
+.about-details-container {
+  display: flex;
+}
 
 /* EXPERIENCE SECTION */
 
@@ -373,8 +385,6 @@ article .icon {
   height: 70vh;
   margin-top: 20vh;
 }
-
-
 
 .contact-info-upper-container {
   display: flex;

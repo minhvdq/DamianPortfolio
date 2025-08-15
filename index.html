@@ -9,9 +9,7 @@
     <link rel="stylesheet" href="mediaqueries.css" />
   </head>
   <body>
-    <div id="top">
-
-    </div>
+    <div id="top"></div>
     <nav id="desktop-nav">
       <div class="logo">Damian Vu</div>
       <div>
@@ -41,7 +39,11 @@
     </nav>
     <section id="profile">
       <div class="section__pic-container">
-        <img style="border-radius: 50%;" src="./assets/profile-pic.jpeg" alt="Damian profile picture" />
+        <img
+          style="border-radius: 50%"
+          src="./assets/profile-pic.jpeg"
+          alt="Damian profile picture"
+        />
       </div>
       <div class="section__text">
         <p class="section__text__p1">Hi, my name is</p>
@@ -53,6 +55,12 @@
             onclick="window.open('./assets/Minh_Vu.pdf')"
           >
             Download CV
+          </button>
+          <button
+            class="btn btn-color-1 btn-fiverr"
+            onclick="window.open('https://www.fiverr.com/s/99rX3Kd')"
+          >
+            My Fiverr Gig
           </button>
           <button class="btn btn-color-1" onclick="location.href='./#contact'">
             Contact Info
@@ -77,36 +85,46 @@
     <section id="about">
       <h1 class="title">About Me</h1>
       <div class="main-content">
-        <div id="intro-text" class="section__pic-container" >
-          <p>Hi, my name is Minh Vu, but people call me Damian. I’m a tech-driven math lover based in the lovely town of Gettysburg, PA. I am currently pursuing a Bachelor’s Degree in Computer Science and Math at Gettysburg College.<br/> <br/>
-
-            I have a variety of hobbies that keep me busy. From engaging in programming competitions and projects to playing sports, I make it a point to always sharpen my knowledge while keeping myself healthy and in shape.<br/> <br/>
-            
-            With a passion for technology, I’m excited to see where my career takes me. I’m always open to learning opportunities.</p>
+        <div id="intro-text" class="section__pic-container">
+          <p>
+            Hi, my name is Minh Vu, but people call me Damian. I’m a tech-driven
+            math lover based in the lovely town of Gettysburg, PA. I am
+            currently pursuing a Bachelor’s Degree in Computer Science and Math
+            at Gettysburg College.<br /><br />
+            I have a variety of hobbies that keep me busy. From engaging in
+            programming competitions and projects to playing sports, I make it a
+            point to always sharpen my knowledge while keeping myself healthy
+            and in shape.<br /><br />
+            With a passion for technology, I’m excited to see where my career
+            takes me. I’m always open to learning opportunities.
+          </p>
         </div>
-        <div id="crap" >
-            <div class="details-container">
-                <h3>Education</h3>
-                <p>B.Sc in Computer Science <br />B.Sc in Math</p>
-            </div>
-            <div id="socials-container">
-                <img
-                  src="./assets/facebook.png"
-                  alt="My facebook profile"
-                  class="icon"
-                  onclick="location.href='https://www.facebook.com/minh.vdq/'"
-                />
-                <img
-                  src="./assets/instagram.png"
-                  alt="My Instagram profile"
-                  class="icon"
-                  onclick="location.href='https://www.instagram.com/minh.vdq/'"
-                />
-            </div>
-            <div id="ghost-contain" style="display: flex; justify-content: center;">
-                <img style="width: 20vw;" src="./assets//ghost.png" alt="ghost" />
-            </div>
+        <div id="crap">
+          <div class="details-container">
+            <h3>Education</h3>
+            <p>B.Sc in Computer Science <br />B.Sc in Math</p>
           </div>
+          <div id="socials-container">
+            <img
+              src="./assets/facebook.png"
+              alt="My facebook profile"
+              class="icon"
+              onclick="location.href='https://www.facebook.com/minh.vdq/'"
+            />
+            <img
+              src="./assets/instagram.png"
+              alt="My Instagram profile"
+              class="icon"
+              onclick="location.href='https://www.instagram.com/minh.vdq/'"
+            />
+          </div>
+          <div
+            id="ghost-contain"
+            style="display: flex; justify-content: center"
+          >
+            <img style="width: 20vw" src="./assets/ghost.png" alt="ghost" />
+          </div>
+        </div>
       </div>
     </section>
     <section id="skills">
@@ -167,7 +185,7 @@
                   class="icon"
                 />
                 <div>
-                  <h3>SQL(Oracle) </h3>
+                  <h3>SQL(Oracle)</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -293,7 +311,9 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:minhvud3008@gmail.com">minhvud3008@gmail.com</a></p>
+          <p>
+            <a href="mailto:minhvud3008@gmail.com">minhvud3008@gmail.com</a>
+          </p>
         </div>
         <div class="contact-info-container">
           <img
@@ -301,17 +321,21 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/minh-vu-a0617225a/">LinkedIn</a></p>
+          <p>
+            <a href="https://www.linkedin.com/in/minh-vu-a0617225a/"
+              >LinkedIn</a
+            >
+          </p>
         </div>
       </div>
     </section>
     <img
-        style="position: fixed; bottom: 5vh; right: 5vw;"
-        src="./assets/upload.png"
-        alt="Arrow icon"
-        class="icon arrow"
-        onclick="location.href='./#top'"
-      />
+      style="position: fixed; bottom: 5vh; right: 5vw"
+      src="./assets/upload.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#top'"
+    />
     <footer>
       <p>Copyright &#169; 2025 Minh Vu. All Rights Reserved.</p>
     </footer>
